@@ -1,0 +1,25 @@
+package L4_JsonDecode;
+
+public class Cat4 {
+   public String name;
+   private String lastName;
+   private int age;
+   static int count=0;
+
+    public Cat4(String name, String lastName, int age) {
+        this.name = name;
+        this.age = age;
+        this.lastName = lastName;
+        System.out.println( this.toString()+ ++count);
+    }
+
+
+    @Override
+    public String toString() {
+        return "Cat{" +
+                "name='" + name + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", age=" + age +
+                '}';
+    }
+}
